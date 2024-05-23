@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid black; 
+    margin: 180px; 
+    border-radius: 5px; 
+}
+
+header {
+    background: rgb(190, 85, 188);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 50px;
+    margin-left: 270px;
+    margin-right: 270px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    position: relative; 
+}
+
+p::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 0; 
+    border-bottom: 2px dotted rgb(190, 85, 188); /* Dotted line with purple color */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the paragraph */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line */
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team {
+    margin: 20px 0;
+}
+
+.management-team {
+    background-color: #c63ebd; /* light purple */
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 270px;
+    margin-right: 270px;
+    text-decoration-color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    position: relative; 
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: grey; 
+    border: 1px solid grey;
+}
+
+em {
+    color: grey;
+}
